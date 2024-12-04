@@ -1,0 +1,11 @@
+Resources:
+  Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      AvailabilityZone: eu-central-1a
+      InstanceType: t2.micro
+      ImageId: ami-0b5673b5f6e8f7fa7
+      KeyName: ssh keypair
+      SecurityGroupIds:
+        - sg-024c6ecb2333014af
+        - sg-04ecc805275e5409f
